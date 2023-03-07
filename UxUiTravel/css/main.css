@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-menu: #FAFC0B;
+    --background-nav: #78909C;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    width: 100%;
+}
+
+header .header-top {
+    margin-top: 10px;
+}
+
+header .header-top .container {
+    background-image: url("/img/vtv_header_tet.png");
+    background-repeat: no-repeat;
+}
+
+.close{
+    display: none;
+}
+
+.open{
+    display: block;
+}
+
+
+header .header-top .container .search-option {
+    display: flex;
+    justify-content: end;
+}
+
+header .header-top .container .search-option .search {
+    position: relative;
+    margin: 0 12px;
+}
+
+header .header-top .container .search-option .search input {
+    padding: 5px 10px;
+}
+
+header .header-top .container .search-option .search a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100;
+    right: 0;
+    padding: 5px 10px;
+
+}
+
+header .header-top .container .search-option .option {
+    width: 100%;
+}
+
+header .header-top .container .search-option .option button {
+    padding: 5px 10px;
+    border: none;
+}
+
+/* Menu */
+header .header-top .container #menu {
+    margin: 20px 0;
+    background-color: var(--background-menu);
+    height: 50px;
+}
+
+header .header-top .container #menu .nav-menu {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+header .header-top .container #menu .nav-menu li {
+    position: relative;
+}
+
+header .header-top .container #menu .nav-menu li:hover .subs-nav-menu {
+    display: block;
+}
+header .header-top .container #menu .nav-menu .subs-nav-menu {
+    position: absolute;
+    display: none;
+    top: 40px;
+    left: -30px;
+    right: 0;
+    bottom: 0;
+}
+
+header .header-top .container #menu .nav-menu .subs-nav-menu a{
+    font-weight: bold;
+}
+
+/* Container */
+.container {}
+
+footer {}
